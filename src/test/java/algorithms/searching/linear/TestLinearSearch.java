@@ -17,4 +17,15 @@ public class TestLinearSearch {
 
     }
 
+    @Test
+    public void testSentinalLinearSearch () {
+        int arr[] = { 23,25,26,23,10,3,6,3,41,61,78};
+        LinearSearch ls = new LinearSearch();
+
+        assertTrue(ls.sentinalLinearSearch(arr,arr.length,61) != -1);
+        assertTrue(ls.sentinalLinearSearch(arr,arr.length,611) == -1);
+
+    }
+
+
 }
